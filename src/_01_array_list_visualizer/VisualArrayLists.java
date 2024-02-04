@@ -12,25 +12,37 @@ public class VisualArrayLists implements ActionListener {
 	Timer timer;
 	JFrame frame = new JFrame();
 	
-	ArrayList<String> list = new ArrayList<String>();
+	ArrayList <String> list = new ArrayList <String>();
 
 	public void addThingsToList() {
 		// 1. Add a bunch of items to our list (4 or 5 should be enough!)
+		list.add("mike");
+		list.add("helo");
+		list.add("speaker");
+		list.add("sandwich");
+		list.add("salami");
 		
 		// 2. Set one item in our list to be something different
-		
+		list.set(2, "hello with 2 l's");
 		// 3. Remove something from our list
-		
+		list.remove(3);
 		// 4. Print the size of our list
-		
+		System.out.println(list.size());
 		// 5. Check if our list contains a specific thing of your choice
 		//	  and print whether it is in the list or not.
+		for (int x = 0; x < list.size(); x++) {
+			if (list.contains("s")) {
+				System.out.println(list.get(x));
+			}
+			
+		}
 		
 		// 6. Get a specific item from our list and print it out
-		
+		System.out.println(list.get(3));
 		// 7. Clear our list of all items
-		
+		list.clear();
 		// 8. Print the size of our list again
+		System.out.println(list.size());
 	}
 	
 	
